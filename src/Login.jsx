@@ -11,10 +11,10 @@ const FbLogin = () => {
     // Load the Facebook SDK script
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: "230031713162674", // Replace with your Facebook app ID
+        appId: "230031713162674", 
         cookie: true,
         xfbml: true,
-        version: "v20.0", // Use the correct API version
+        version: "v20.0", 
       });
 
       window.FB.AppEvents.logPageView();
