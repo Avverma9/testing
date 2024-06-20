@@ -11,10 +11,10 @@ const FbLogin = () => {
     // Load the Facebook SDK script
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: "230031713162674", 
+        appId: "230031713162674",
         cookie: true,
         xfbml: true,
-        version: "v20.0", 
+        version: "v20.0",
       });
 
       window.FB.AppEvents.logPageView();
@@ -28,7 +28,8 @@ const FbLogin = () => {
       }
       js = d.createElement(s);
       js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      js.src =
+        "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0&appId=230031713162674";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
   }, []);
